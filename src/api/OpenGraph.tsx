@@ -2,8 +2,6 @@ import { ImageResponse } from '@vercel/og'
 import { description } from 'lib/next-seo'
 import { NextRequest } from 'next/server'
 import { getBaseURL } from 'utils/getBaseURL'
-import { shuffle } from 'utils/shuffle'
-import { NUMBER_OF_IMAGES } from '../pages/HomePage/HomePage'
 
 export const OpenGraph = async (req: NextRequest) => {
   return new ImageResponse(
@@ -24,8 +22,9 @@ export const OpenGraph = async (req: NextRequest) => {
           {description}
         </div>
         <div tw="flex mt-8">
-          {shuffle([...Array(NUMBER_OF_IMAGES)].map((_, i) => i + 1))
-            .slice(0, 8)
+          {[7, 10, 22, 2, 12, 17, 18, 6]
+            // .map((_, i) => i + 1)
+            // .slice(0, 8)
             .map((i) => (
               <div key={i} tw="flex flex-col">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
