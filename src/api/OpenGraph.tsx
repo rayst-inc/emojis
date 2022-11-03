@@ -27,13 +27,17 @@ export const OpenGraph = async (req: NextRequest) => {
           {shuffle([...Array(NUMBER_OF_IMAGES)].map((_, i) => i + 1))
             .slice(0, 8)
             .map((i) => (
-              <div key={i} tw="flex">
+              <div key={i} tw="flex flex-col">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  tw="rounded-lg w-10 h-10 m-2 self-center"
+                  src={`${getBaseURL()}/emojis/apple/${i}.png`}
+                  alt="gradients"
+                />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   tw="rounded-lg w-24 h-24 m-4"
                   src={`${getBaseURL()}/emojis/3d/${i}.png`}
-                  // width={1000}
-                  // height={1000}
                   alt="gradients"
                 />
               </div>
