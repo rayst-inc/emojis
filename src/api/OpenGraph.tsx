@@ -30,14 +30,14 @@ export const OpenGraph = async (req: NextRequest) => {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   tw="rounded-lg w-10 h-10 m-2 self-center"
-                  src={`${getBaseURL()}/emojis/apple/${i}.png`}
-                  alt="gradients"
+                  src={`${getBaseURL()}/_next/image?url=/emojis/apple/${i}.png&w=64&q=75`}
+                  alt=""
                 />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   tw="rounded-lg w-24 h-24 m-4"
-                  src={`${getBaseURL()}/emojis/3d/${i}.png`}
-                  alt="gradients"
+                  src={`${getBaseURL()}/_next/image?url=/emojis/3d/${i}.png&w=1080&q=75`}
+                  alt=""
                 />
               </div>
             ))}
