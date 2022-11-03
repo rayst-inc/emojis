@@ -31,7 +31,7 @@ export const OpenGraph = async (req: NextRequest) => {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   tw="rounded-lg w-24 h-24 m-4"
-                  src={`${getBaseURL()}/gradients/${i}.gradients.ray.st.jpeg`}
+                  src={`${getBaseURL()}/emojis/3d/${i}.png`}
                   // width={1000}
                   // height={1000}
                   alt="gradients"
