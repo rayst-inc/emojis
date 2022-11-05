@@ -16,7 +16,7 @@ export default function Document() {
         />
         <link
           rel="icon"
-          href={`https://gradients.ray.st/gradients/41.gradients.ray.st.jpeg`}
+          href={`https://gradients.ray.st/gradients/41.gradients.ray.st.png`}
         />
       </Head>
       <body>
