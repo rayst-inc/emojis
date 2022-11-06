@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
           async
           defer
           data-website-id="76ea6a40-d192-4c98-a13f-46aa70f725a3"
-          src="https://u-ma.vercel.app/u.js"
+          src="https://u.ray.st/u.js"
         ></Script>
       )}
     </>
