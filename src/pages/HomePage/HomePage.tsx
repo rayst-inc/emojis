@@ -48,7 +48,7 @@ export function HomePage() {
                       href={`/emojis/3d/${i}.png`}
                       download
                     >
-                      <div className="absolute inset-0 z-10 m-auto h-16 w-16 rounded-lg bg-black/50 opacity-0 backdrop-blur transition duration-100 group-hover:opacity-100">
+                      <div className="absolute inset-0 z-10 m-auto h-16 w-16 rounded-lg bg-black/50 opacity-0 backdrop-blur transition duration-100 group-active:opacity-100 md:group-hover:opacity-100">
                         <svg
                           width="50%"
                           height="50%"
@@ -67,7 +67,7 @@ export function HomePage() {
                       </div>
                       <Image
                         priority
-                        className="rounded-lg border-white group-hover:border-4"
+                        className="rounded-lg border-white group-active:border-4 md:group-hover:border-4"
                         src={`/emojis/3d/${i}.png`}
                         width={1000}
                         height={1000}
