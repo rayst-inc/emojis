@@ -1,8 +1,5 @@
 import Link from 'next/link'
-import Logo from './Logo'
-
-const ambientLinkStyle =
-  'opacity-50 hover:opacity-100 duration-200 ease-in-out transition-default '
+import { LogoWide } from './Logo'
 
 export const Footer = () => (
   <div className="mt-24 mb-12 grid w-full grid-cols-2 gap-8 border-t border-white/10 px-16 pt-16 md:grid-cols-4">
@@ -15,8 +12,7 @@ export const Footer = () => (
         target="_blank"
       >
         <span className="mr-2">Made by</span>
-        <Logo />
-        Rayst
+        <LogoWide />
       </Link>
     </div>
     <div className="flex flex-col">
