@@ -14,7 +14,7 @@ export function HomePage() {
         <Navigation />
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex flex-col">
-            <h1 className="mt-8 bg-gradient-to-r from-teal-400 to-orange-300 bg-clip-text p-1 text-center text-4xl font-black text-transparent md:text-6xl">
+            <h1 className="mt-16 bg-gradient-to-r from-teal-400 to-orange-300 bg-clip-text p-1 text-center text-4xl font-black text-transparent md:text-6xl">
               {title.replace('Rayst', '')}
             </h1>
             <p className="p-4 text-center text-lg">{description}</p>
