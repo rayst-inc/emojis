@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@next/next/google-font-display": "off",
+    "@next/next/google-font-preconnect": "off"
+  }
 }
