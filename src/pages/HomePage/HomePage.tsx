@@ -1,11 +1,9 @@
 import Footer from 'components/Footer'
 import Navigation from 'components/Navigation'
 import { AnimatePresence, motion } from 'framer-motion'
-import { description, title } from 'lib/next-seo'
+import { description, NUMBER_OF_IMAGES, title } from 'lib/next-seo'
 import Image from 'next/image'
 import { shuffle } from 'utils/shuffle'
-
-export const NUMBER_OF_IMAGES = 24
 
 export function HomePage() {
   return (
