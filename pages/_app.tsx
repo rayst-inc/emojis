@@ -5,9 +5,7 @@ import Script from 'next/script'
 import { SEO } from 'src/lib/next-seo'
 import 'styles/globals.css'
 
-export const isProd = () =>
-  process.env.NODE_ENV === 'production' &&
-  process.env.VERCEL_ENV === 'production'
+export const isProd = () => process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
